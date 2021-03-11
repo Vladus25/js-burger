@@ -1,0 +1,122 @@
+/* Intestazioni principali della pagina */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 50%;
+  margin: 0 25%;
+  background-color: #fff5e2;
+}
+
+/* Header */
+
+header{
+  position: relative;
+  height: 150px;
+  background-color: #fdbb40;
+}
+
+header h1{
+  padding: 50px;
+}
+
+header img{
+  position: absolute;
+  top: -20%;
+  left: 80%;
+  content: '';
+  width: 256px;
+  height: 256px;
+}
+
+/* Main */
+
+main{
+  padding: 50px;
+  /* width: 50%;
+  margin: 0 25%; */
+  background-color: white;
+}
+
+main h2{
+  margin: 30px 0;
+}
+
+.burger-nome{
+  border: none;
+  font-size: 35px;
+}
+
+.ingredients-style{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ingredients-style li{
+  flex-basis: 50%;
+  height: 50px;
+  margin-bottom: 20px;
+  line-height: 50px;
+  list-style-type: none;
+}
+
+.ingredients-style li img{
+  width: 50px;
+  margin-right: 20px;
+}
+
+
+/* Lo sconto */
+
+.sconto{
+  margin-top: 40px;
+}
+
+.sconto label{
+  font-size: 20px;
+}
+
+.sconto input{
+  width: 70%;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff5e2;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+/* Buttone calcola */
+
+.buttone{
+  text-align: center;
+  margin-top: 40px;
+}
+
+button{
+  border: none;
+  border-radius: 10px;
+  background-color: #fdbb40;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* Footer */
+
+footer{
+  padding: 50px;
+  background-color: white;
+  background-color: #d33359;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  color: #ffffff;
+}
+
+footer span{
+  font-size: 30px;
+}

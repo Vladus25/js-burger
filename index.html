@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Burger Prezzo</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- Create your Burger -->
+    <header>
+      <h1>Create Your Burger</h1>
+      <img src="img/burger-top.png" alt="Burger">
+    </header>
+
+    <!-- Name and Ingredients -->
+    <main>
+      <input id="burger-name" class="burger-nome" name="burger-name" type="text" placeholder="Name Your Burger">
+      <h2 class="main-title">Ingredients</h2>
+
+      <ul class="ingredients-style">
+        <li>
+          <img src="img/cheese.svg" width="20px">
+          <input id="formaggio" class="ingred" type="checkbox" data-price="2">
+          <label for="cheese">Cheese</label>
+        </li>
+        <li>
+          <img src="img/fried-egg.svg" width="20px">
+          <input id="uova" class="ingred" type="checkbox" data-price="3">
+          <label for="egg">Egg</label>
+        </li>
+        <li>
+          <img src="img/mustard.svg" width="20px">
+          <input id="mostarda" class="ingred" type="checkbox" data-price="4">
+          <label for="lettuce">Lettuce</label>
+        </li>
+        <li>
+          <img src="img/tomato.svg" width="20px">
+          <input id="pomodoro" class="ingred" type="checkbox" data-price="1">
+          <label for="tomato">Tomato</label>
+        </li>
+        <li>
+          <img src="img/lettuce.svg" width="20px">
+          <input id="lattuga" class="ingred" type="checkbox" data-price="6">
+          <label for="lettuce">Lettuce</label>
+        </li>
+        <li>
+          <img src="img/ketchup.svg" width="20px">
+          <input id="ketchup" class="ingred" type="checkbox" data-price="1">
+          <label for="ketchup">Ketchup</label>
+        </li>
+      </ul>
+
+      <div class="sconto">
+        <label for="coupon">Discount Coupon</label>
+        <input id="burger-coupon" name="coupon" type="text" placeholder="12354ABCDEF">
+      </div>
+
+      <div class="buttone">
+        <button id="calculate">Calculate</button>
+      </div>
+    </main>
+
+    <!-- Your Price -->
+    <footer>
+
+      <div class="">
+        <span>Your Price</span>
+      </div>
+      <div class="">
+        <span>euro</span>
+        <span id="price">10</span>
+      </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
