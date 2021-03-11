@@ -45,7 +45,13 @@ priceBtn.addEventListener('click', function() {
     }
 
     // Coupons - Sconto
-    var coupons = ['417428FERYDE', '293619QKROCV', '840366EODNGP', '993645AEYVGW', '194637DYRBXZ'];
+    var coupons = [
+      '417428FERYDE',
+      '293619QKROCV',
+      '840366EODNGP',
+      '993645AEYVGW',
+      '194637DYRBXZ',
+    ];
 
     var finded = false;
     var burgerCoupon = document.getElementById('burger-coupon').value;
@@ -55,7 +61,9 @@ priceBtn.addEventListener('click', function() {
       if (coupon == burgerCoupon) {
 
         finded = true;
+
       }
+
     }
     if (finded) {
       finalPrice -= finalPrice / 100 * 20;
