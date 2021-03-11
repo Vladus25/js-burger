@@ -124,6 +124,11 @@ button{
   font-weight: bold;
 }
 
+button:hover{
+  background-color: rgb(244, 57, 16);
+  transition: 0.5s;
+}
+
 
 /* Footer */
 

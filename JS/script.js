@@ -28,7 +28,7 @@ priceBtn.addEventListener('click', function() {
   }
   else {
 
-    var finalPrice = 5;
+    var finalPrice = 5.50;
 
     var checkboxs = document.getElementsByClassName('ingred');
 
@@ -70,7 +70,6 @@ priceBtn.addEventListener('click', function() {
     }
 
     var spanPrice = document.getElementById('price');
-    spanPrice.innerHTML = finalPrice;
-    console.log(finalPrice);
+    spanPrice.innerHTML = finalPrice.toFixed(2);
   }
 });
