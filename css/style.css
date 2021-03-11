@@ -79,6 +79,7 @@ main h2{
 .ingredients-style li input{
   vertical-align: middle;
   margin-right: 15px;
+  pointer-events: none;
 }
 
 .ingredients-style li span{
