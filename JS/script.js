@@ -5,11 +5,11 @@ for (var i = 0; i < lis.length; i++) {
 
   var li = lis[i];
 
-  li.addEventListener('event', function() {
+  li.addEventListener('click', function() {
 
     var clickedLi = this;
     var clickedLiChildrens = clickedLi.children;
-    var clickedCheckbox = clickedLiChildrens[1];
+    var clickedCheckbox = clickedLiChildrens[2];
 
     clickedCheckbox.checked = !clickedCheckbox.checked;
 
@@ -18,7 +18,7 @@ for (var i = 0; i < lis.length; i++) {
 }
 
 var priceBtn = document.getElementById('calculate');
-priceBtn.addEventListener('event', function() {
+priceBtn.addEventListener('click', function() {
 
   var burgerName = document.getElementById('burger-name').value;
 
